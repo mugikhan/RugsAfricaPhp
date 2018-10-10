@@ -1,0 +1,524 @@
+2018-10-06 18:58:22 : PayFast ITN call received
+2018-10-06 18:58:22 : Get posted data
+2018-10-06 18:58:22 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681195
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => This is a test pls work
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 369c6caac8bdf79f868e4195ba0d7bb8
+)
+
+2018-10-06 18:58:22 : Verify security signature
+2018-10-06 18:58:22 : Signature = valid
+2018-10-06 18:58:22 : Verify data received
+2018-10-06 18:58:22 : Host = sandbox.payfast.co.za
+2018-10-06 18:58:22 : Params = m_payment_id=&pf_payment_id=681195&payment_status=COMPLETE&item_name=Test+name&item_description=This+is+a+test+pls+work&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 18:58:22 : Response:
+VALID
+2018-10-06 18:58:22 : Error occurred: Amount mismatch
+2018-10-06 18:59:39 : PayFast ITN call received
+2018-10-06 18:59:39 : Get posted data
+2018-10-06 18:59:39 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681196
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => 11.99
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => a0c80c4a195ec93a7428f85f893b2c3f
+)
+
+2018-10-06 18:59:39 : Verify security signature
+2018-10-06 18:59:39 : Signature = valid
+2018-10-06 18:59:39 : Verify data received
+2018-10-06 18:59:39 : Host = sandbox.payfast.co.za
+2018-10-06 18:59:39 : Params = m_payment_id=&pf_payment_id=681196&payment_status=COMPLETE&item_name=Test+name&item_description=11.99&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 18:59:39 : Response:
+VALID
+2018-10-06 18:59:39 : Error occurred: Amount mismatch
+2018-10-06 19:00:51 : PayFast ITN call received
+2018-10-06 19:00:51 : Get posted data
+2018-10-06 19:00:51 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681197
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => 11.99
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 15e7bb32091e88063873751fa96a8e47
+)
+
+2018-10-06 19:00:51 : Verify security signature
+2018-10-06 19:00:51 : Signature = valid
+2018-10-06 19:00:51 : Verify data received
+2018-10-06 19:00:51 : Host = sandbox.payfast.co.za
+2018-10-06 19:00:51 : Params = m_payment_id=&pf_payment_id=681197&payment_status=COMPLETE&item_name=Test+name&item_description=11.99&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:00:51 : Response:
+VALID
+2018-10-06 19:00:51 : Error occurred: Amount mismatch
+2018-10-06 19:04:33 : PayFast ITN call received
+2018-10-06 19:04:33 : Get posted data
+2018-10-06 19:04:33 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681198
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => bdde586e19dd339030e31de994758f5c
+)
+
+2018-10-06 19:04:33 : Verify security signature
+2018-10-06 19:04:33 : Signature = valid
+2018-10-06 19:04:33 : Verify data received
+2018-10-06 19:04:33 : Host = sandbox.payfast.co.za
+2018-10-06 19:04:33 : Params = m_payment_id=&pf_payment_id=681198&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:04:33 : Response:
+VALID
+2018-10-06 19:04:33 : Error occurred: Amount mismatch
+2018-10-06 19:06:11 : PayFast ITN call received
+2018-10-06 19:06:11 : Get posted data
+2018-10-06 19:06:11 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681199
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => df9395dc19041d964784c29680038f26
+)
+
+2018-10-06 19:06:11 : Verify security signature
+2018-10-06 19:06:11 : Signature = valid
+2018-10-06 19:06:11 : Verify data received
+2018-10-06 19:06:11 : Host = sandbox.payfast.co.za
+2018-10-06 19:06:11 : Params = m_payment_id=&pf_payment_id=681199&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:06:11 : Response:
+VALID
+2018-10-06 19:06:11 : Error occurred: Amount mismatch
+2018-10-06 19:08:51 : PayFast ITN call received
+2018-10-06 19:08:51 : Get posted data
+2018-10-06 19:08:51 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681200
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => f1391d1ea512cb7f954008e2323d0ee3
+)
+
+2018-10-06 19:08:51 : Verify security signature
+2018-10-06 19:08:51 : Signature = valid
+2018-10-06 19:08:51 : Verify data received
+2018-10-06 19:08:51 : Host = sandbox.payfast.co.za
+2018-10-06 19:08:51 : Params = m_payment_id=&pf_payment_id=681200&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:08:51 : Response:
+VALID
+2018-10-06 19:08:51 : Session Value: 
+2018-10-06 19:08:51 : Data Value: 
+2018-10-06 19:08:51 : Error occurred: Amount mismatch
+2018-10-06 19:15:43 : PayFast ITN call received
+2018-10-06 19:15:43 : Get posted data
+2018-10-06 19:15:43 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681203
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 08737845fb727fd7e2e9c60169562e67
+)
+
+2018-10-06 19:15:43 : Verify security signature
+2018-10-06 19:15:43 : Signature = valid
+2018-10-06 19:15:43 : Verify data received
+2018-10-06 19:15:43 : Host = sandbox.payfast.co.za
+2018-10-06 19:15:43 : Params = m_payment_id=&pf_payment_id=681203&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:15:44 : Response:
+VALID
+2018-10-06 19:15:44 : Session Value: 11.99
+2018-10-06 19:15:44 : Data Value: 11.99
+2018-10-06 19:15:44 : Check order status and update the order
+2018-10-06 19:15:44 : mugikhan@gmail.com- Complete
+2018-10-06 19:18:27 : PayFast ITN call received
+2018-10-06 19:18:27 : Get posted data
+2018-10-06 19:18:27 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681205
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 5632db2d98d7284826c1f886f5eded20
+)
+
+2018-10-06 19:18:27 : Verify security signature
+2018-10-06 19:18:27 : Signature = valid
+2018-10-06 19:18:27 : Verify data received
+2018-10-06 19:18:27 : Host = sandbox.payfast.co.za
+2018-10-06 19:18:27 : Params = m_payment_id=&pf_payment_id=681205&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:18:27 : Response:
+VALID
+2018-10-06 19:18:27 : Check order status and update the order
+2018-10-06 19:18:27 : 
+2018-10-06 19:20:22 : PayFast ITN call received
+2018-10-06 19:20:22 : Get posted data
+2018-10-06 19:20:22 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681206
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 74d744355dff03313efe4bd7e96b054c
+)
+
+2018-10-06 19:20:22 : Verify security signature
+2018-10-06 19:20:22 : Signature = valid
+2018-10-06 19:20:22 : Verify data received
+2018-10-06 19:20:22 : Host = sandbox.payfast.co.za
+2018-10-06 19:20:22 : Params = m_payment_id=&pf_payment_id=681206&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:20:23 : Response:
+VALID
+2018-10-06 19:20:23 : Check order status and update the order
+2018-10-06 19:23:51 : PayFast ITN call received
+2018-10-06 19:23:51 : Get posted data
+2018-10-06 19:23:51 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681208
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 399402dc6f700ac10ae9fa7bd9f3637a
+)
+
+2018-10-06 19:23:51 : Verify security signature
+2018-10-06 19:23:51 : Signature = valid
+2018-10-06 19:23:51 : Verify data received
+2018-10-06 19:23:51 : Host = sandbox.payfast.co.za
+2018-10-06 19:23:51 : Params = m_payment_id=&pf_payment_id=681208&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:23:51 : Response:
+VALID
+2018-10-06 19:23:51 : Check order status and update the order
+2018-10-06 19:25:38 : PayFast ITN call received
+2018-10-06 19:25:38 : Get posted data
+2018-10-06 19:25:38 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681209
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 69e46b97bd6588888c5100187957a1c4
+)
+
+2018-10-06 19:25:38 : Verify security signature
+2018-10-06 19:25:38 : Signature = valid
+2018-10-06 19:25:38 : Verify data received
+2018-10-06 19:25:38 : Host = sandbox.payfast.co.za
+2018-10-06 19:25:38 : Params = m_payment_id=&pf_payment_id=681209&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:25:39 : Response:
+VALID
+2018-10-06 19:25:39 : Check order status and update the order
+2018-10-06 19:28:38 : PayFast ITN call received
+2018-10-06 19:28:38 : Get posted data
+2018-10-06 19:28:38 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681210
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 1ef3a349afaa3b02b0797bfd7857d0ab
+)
+
+2018-10-06 19:28:38 : Verify security signature
+2018-10-06 19:28:38 : Signature = valid
+2018-10-06 19:28:38 : Verify data received
+2018-10-06 19:28:38 : Host = sandbox.payfast.co.za
+2018-10-06 19:28:38 : Params = m_payment_id=&pf_payment_id=681210&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:28:38 : Response:
+VALID
+2018-10-06 19:28:38 : Check order status and update the order
+2018-10-06 19:34:22 : PayFast ITN call received
+2018-10-06 19:34:22 : Get posted data
+2018-10-06 19:34:22 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681213
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => c1923d69b90f7f4853fb44dc85e448f1
+)
+
+2018-10-06 19:34:22 : Verify security signature
+2018-10-06 19:34:22 : Signature = valid
+2018-10-06 19:34:22 : Verify data received
+2018-10-06 19:34:22 : Host = sandbox.payfast.co.za
+2018-10-06 19:34:22 : Params = m_payment_id=&pf_payment_id=681213&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:34:22 : Response:
+VALID
+2018-10-06 19:34:22 : Check order status and update the order
+2018-10-06 19:38:08 : PayFast ITN call received
+2018-10-06 19:38:08 : Get posted data
+2018-10-06 19:38:08 : PayFast Data: Array
+(
+    [m_payment_id] => 
+    [pf_payment_id] => 681214
+    [payment_status] => COMPLETE
+    [item_name] => Test name
+    [item_description] => Test
+    [amount_gross] => 11.99
+    [amount_fee] => -2.30
+    [amount_net] => 9.69
+    [custom_str1] => 
+    [custom_str2] => 
+    [custom_str3] => 
+    [custom_str4] => 
+    [custom_str5] => 
+    [custom_int1] => 
+    [custom_int2] => 
+    [custom_int3] => 
+    [custom_int4] => 
+    [custom_int5] => 
+    [name_first] => Mughees
+    [name_last] => Khan
+    [email_address] => mugikhan@gmail.com
+    [merchant_id] => 10010228
+    [signature] => 359c3b7eac3bc62dd3c7ee33954cb624
+)
+
+2018-10-06 19:38:08 : Verify security signature
+2018-10-06 19:38:08 : Signature = valid
+2018-10-06 19:38:08 : Verify data received
+2018-10-06 19:38:08 : Host = sandbox.payfast.co.za
+2018-10-06 19:38:08 : Params = m_payment_id=&pf_payment_id=681214&payment_status=COMPLETE&item_name=Test+name&item_description=Test&amount_gross=11.99&amount_fee=-2.30&amount_net=9.69&custom_str1=&custom_str2=&custom_str3=&custom_str4=&custom_str5=&custom_int1=&custom_int2=&custom_int3=&custom_int4=&custom_int5=&name_first=Mughees&name_last=Khan&email_address=mugikhan%40gmail.com&merchant_id=10010228
+2018-10-06 19:38:08 : Response:
+VALID
+2018-10-06 19:38:08 : Check order status and update the order

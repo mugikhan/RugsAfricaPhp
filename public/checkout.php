@@ -15,13 +15,15 @@
 <div class="row">
     <div class="col-lg-12">
         <h1 class="text-center">Checkout</h1>
-            <div class="table-responsive">
-            <table class="table table-striped">
-                <thead>
+        <div><?php display_message(); ?></div>
+            <div class="table-responsive-lg">
+            <table class="table table-striped table-sm">
+                <thead class="elegant-color-dark text-white">
                   <tr>
-                   <th class="th-sm">Product</th>
-                   <th class="th-sm">Price</th>
-                   <th class="th-sm">Quantity</th>
+                    <th scope="col" class="th-sm" colspan="3">Product</th>
+                    <th scope="col" class="th-sm" colspan="3">Price</th>
+                    <th scope="col" class="th-sm" colspan="3">Quantity</th>
+                    <th scope="col" class="th-sm" colspan="3">Remove, Add or Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -88,9 +90,9 @@
                 // Merchant details
                 'merchant_id' => '10010228',
                 'merchant_key' => 'krfdrtmax3etq',
-                'return_url' => 'http://0dc8159d.ngrok.io/RugsAfrica/public/thank_you.php',
-                'cancel_url' => 'http://0dc8159d.ngrok.io/RugsAfrica/public/cancel.php',
-                'notify_url' => 'http://0dc8159d.ngrok.io/RugsAfrica/public/notify.php?total=' . $cartTotal,
+                'return_url' => 'http://2fb4ed5c.ngrok.io/RugsAfrica/public/thank_you.php',
+                'cancel_url' => 'http://2fb4ed5c.ngrok.io/RugsAfrica/public/cancel.php',
+                'notify_url' => 'http://2fb4ed5c.ngrok.io/RugsAfrica/public/notify.php?total=' . $cartTotal,
                 // Buyer details
                 'name_first' => $firstName,
                 'name_last'  => $lastName,

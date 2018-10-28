@@ -1,4 +1,5 @@
 <?php
+    require_once "../resources/config.php";
     // Import PHPMailer classes into the global namespace
     // These must be at the top of your script, not inside a function
     use PHPMailer\PHPMailer\PHPMailer;
@@ -20,7 +21,7 @@
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-    $to = "info@rugsafrica.com";
+    $to = "mugikhan@gmail.com";
 
     /*Recaptcha code from http://makingspidersense.com/tutorials/tut-recaptcha.txt */
     function post_captcha($user_response) {
@@ -65,6 +66,13 @@
                 $mail->Password = 'R8172_rug123*';                           // SMTP password
                 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                 $mail->Port = 587;                                    // TCP port to connect to
+                $mail->SMTPOptions = array(
+                    'ssl' => array(
+                        'verify_peer' => false,
+                        'verify_peer_name' => false,
+                        'allow_self_signed' => true
+                    )
+                );
 
                 //Recipients
                 $mail->setFrom($userEmail, $userName);
@@ -83,7 +91,7 @@
                 $mail->Body    = $userMessage;
                 //$mail->AltBody = $userMessage;
                 $mail->send();
-                echo 'Message has been sent';
+                redirect("thank_you_contact.php");
             } catch (Exception $e) {
                 echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
             }

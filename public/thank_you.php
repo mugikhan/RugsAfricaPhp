@@ -19,7 +19,7 @@
         <h1>Your order has been placed!</h1>
         <p>Your order has been successfully processed.</p>
         <p>You can view your order history by going to the <a class="success-page-link" href="#">my account</a> page and by clicking on history.</p>
-        <p>For enquiries, please contact <a href="#" class="success-page-link">us.</a></p>
+        <p>For enquiries, please contact <a href="contact.php" class="success-page-link">us.</a></p>
         <p>Thanks for shopping with us online!</p>
     </div>
  </div><!--Main Content-->

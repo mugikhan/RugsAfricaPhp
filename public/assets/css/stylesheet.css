@@ -14,7 +14,11 @@ body{
     }
 
     .content-wrapper{
-        margin-top: 120px;
+        margin-top: 115px;
+    }
+
+    .table-responsive{
+        overflow-x: hidden !important;
     }
 
     #cartLink{
@@ -38,7 +42,72 @@ body{
         color: royalblue !important;
     }
 
+    .contact-heading{
+        font-weight: bold;
+        color: #666;
+    }
 
+    .contact-img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block !important;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+
+    #FAQ{
+        padding: 0 0 0 25px;
+    }
+
+    .FAQ-heading{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .FAQ-heading-1{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .FAQ-text{
+        font-size: 18px;
+        line-height: 35px;
+        color: #939393;
+    }
+
+    .FAQ-sub-heading{
+        font-weight: 500;
+        color: #666;
+        font-size: 20px;
+    }
+
+    .privacy-heading{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .privacy-text{
+        font-size: 18px;
+        line-height: 35px;
+        color: #939393;
+    }
+
+    .privacy-sub-heading{
+        font-weight: 500;
+        color: #666;
+        font-size: 20px;
+    }
+
+    .btn-cart{
+        width: 100px !important;
+        height: auto;
+    }
+
+    #accountPage{
+        margin-bottom: 80px;
+    }
 
 
     .back-to-top {
@@ -77,87 +146,6 @@ body{
         text-decoration: none;
     }
 
-    #navRow{
-        width: 100%;
-        padding: 10px 0 0 0;
-    }
-
-    .nav-item a{
-        color: #fff;
-        font-size: 18px;
-    }
-
-    .search-btn{
-        color: #fff;
-    }
-
-    .page-links{
-        font-size: 18px;
-        line-height: 40px;
-        color: lightgrey;
-    }
-
-    .page-links:hover{
-        color: #FF0000;
-    }
-
-    #navbarMain{
-        text-align: center;
-        background-color: transparent;
-    }
-
-    #navbarMain svg{
-        color: #888;
-    }
-
-    #navbarMain p{
-        color: #888;
-        text-align: center;
-    }
-
-    #navbarMain a:hover svg{ 
-        color: #FF0000; 
-    }
-
-    .fa-stack-2x{
-        color: white;
-    }
-
-    #wishlistItems{
-        padding: .25rem 0 0 0;
-    }
-
-    #cartItems{
-        padding: 1px 0 0 .5rem;
-    }
-
-    #HomePage{
-        padding-top: 30px;
-    }
-
-    .home-img{
-        margin-left: auto;
-        margin-right: auto;
-        display: block !important;
-    }
-
-    .productsRow{
-        padding: 1.5rem 0 0 0;
-    }
-
-    #selling-points-container{
-        padding: 20px 0 20px 0;
-        text-align: center;
-    }
-
-    #selling-point-circle{
-        color: #888;
-    }
-
-    .selling-point-text{
-        padding: 0 0 0 10px;
-    }
-
     .card-login{
         width: 85%;
         margin-bottom: 130px;
@@ -186,7 +174,6 @@ body{
         text-align: center;
 
     }
-
 
     .addToCart-btn{
         font-size: 11px !important;
@@ -234,12 +221,76 @@ body{
     .image-source-link {
         color: #98C3D1;
     }
-
-
-
 }
 
 @media only screen and (max-width: 601px){
+
+    .table-responsive{
+        overflow-x: hidden !important;
+    }
+
+    .contact-heading{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .contact-img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block !important;
+        width: inherit;
+    }
+
+    .contact-form{
+        margin-bottom: 20px;
+    }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+
+    #FAQ{
+        padding: 0 0 0 5px;
+    }
+
+    .FAQ-heading{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .FAQ-heading-1{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .FAQ-text{
+        font-size: 18px;
+        line-height: 35px;
+        color: #939393;
+    }
+
+    .FAQ-sub-heading{
+        font-weight: 500;
+        color: #666;
+        font-size: 20px;
+    }
+
+    .privacy-heading{
+        font-weight: bold;
+        color: #666;
+    }
+
+    .privacy-text{
+        font-size: 18px;
+        line-height: 35px;
+        color: #939393;
+    }
+
+    .privacy-sub-heading{
+        font-weight: 500;
+        color: #666;
+        font-size: 20px;
+    }
 
     .carousel{
         height:100%;
@@ -248,6 +299,17 @@ body{
     }
     .carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{
         height:100%;
+    }
+
+    .btn-cart{
+        width: 50px !important;
+        height: auto;
+    }
+
+    .cart-icon{
+        display: block;
+        text-align: center;
+        z-index: -1;
     }
 
     #HomePage{

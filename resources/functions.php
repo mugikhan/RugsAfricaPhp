@@ -16,7 +16,12 @@
 
     function display_message(){
         if(isset($_SESSION['message'])){
-            echo $_SESSION['message'];
+            $message = <<<DELIMETER
+                    <div class="alert alert-danger" role="alert">
+                       {$_SESSION['message']}
+                    </div>
+DELIMETER;
+            echo $message;
             unset($_SESSION['message']);
         }
     }
@@ -226,7 +231,7 @@ DELIMETER;
                         <h4 class="font-weight-bold blue-text">
                           <strong>R{$row['product_price']}</strong>
                         </h4>
-                        <a href="../resources/cart.php?add={$row['product_id']}" class="btn btn-primary addToCart-btn">Add To Cart
+                        <a href="../resources/cart.php?add={$row['product_id']}&page=home" class="btn btn-primary addToCart-btn">Add To Cart
                             <i class="fas fa-shopping-cart ml-1"></i>
                         </a>
                       </div>
@@ -1003,8 +1008,8 @@ DELIMETER;
     }
 
     function display_cart_nav(){
-        if(isset($_SESSION['customer'])) {
-            $cartNum = isset($_SESSION['item_quantity']) ? $_SESSION['item_quantity'] : $_SESSION['item_quantity'] = "0";
+        if(isset($_SESSION['customer']) && isset($_SESSION['item_quantity'])) {
+            $cartNum = $_SESSION['item_quantity'];
         }
         else{
             $cartNum = 0;
@@ -1014,7 +1019,6 @@ DELIMETER;
             <li class="nav-item" id="cartLink">
                 <a class="nav-link waves-effect" href="checkout.php">
                     <!--<span class="badge red mr-1">
-                        $cartNum
                     </span>
                     <i class="fa fa-shopping-cart"></i>
                     <span class="clearfix d-none d-sm-inline-block">Cart</span>-->
@@ -1047,7 +1051,7 @@ DELIMETER;
 
     function display_account(){
         $account = <<<DELIMETER
-                <a href="#" class="nav-link">
+                <a href="account.php" class="nav-link">
                     <i class="fas fa-user mr-2"></i>My Account<br>
                 </a>
 DELIMETER;
@@ -1055,6 +1059,109 @@ DELIMETER;
         echo $account;
     }
 
+    ////////////////////////////////////////////////////////////ACCOUNT MANAGER/////////////////////////////////////
+
+    function display_orders_account_dashboard(){
+        $orderQuery = "SELECT * FROM orders WHERE order_email=? LIMIT 10";
+        $email = $_SESSION['customer'];
+        $stmt = statement_init();
+        statement_confirm($stmt, $orderQuery);
+
+        //Bind params
+        mysqli_stmt_bind_param($stmt, "s", $email);
+        //Run parameters inside db
+        statement_execute($stmt);
+        $result = statement_result($stmt);
+
+        while($row = fetch_array($result)){
+            $orders = <<<DELIMETER
+                <tr>
+                    <td>{$row['order_payment_id']}</td>
+                    <td>{$row['order_date']}</td>
+                    <td><div class="row">
+                            <div class="col-12 col-lg-12">
+                                <strong>Order Total: R{$row['order_amount_gross']}</strong>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <strong>Payment Status: {$row['order_payment_status']}</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+DELIMETER;
+            echo $orders;
+        }
+    }
+
+    function display_addresses(){
+        $addressQuery = "SELECT * FROM addresses WHERE address_cust_email=?";
+        $email = $_SESSION['customer'];
+        $stmt = statement_init();
+        statement_confirm($stmt, $addressQuery);
+
+        //Bind params
+        mysqli_stmt_bind_param($stmt, "s", $email);
+        //Run parameters inside db
+        statement_execute($stmt);
+        $result = statement_result($stmt);
+
+        while($row = fetch_array($result)){
+            $addresses = <<<DELIMETER
+                <p>
+                    {$row['address_street']}<br>
+                    {$row['address_suburb']}<br>
+                    {$row['address_city']}<br>
+                    {$row['address_province']}<br>
+                    {$row['address_postal_code']}<br>
+                    {$row['address_country']}
+                </p>
+DELIMETER;
+            echo $addresses;
+        }
+    }
+
+    function display_orders_account(){
+        if (!isset($_GET['startrow']) or !is_numeric($_GET['startrow'])) {
+            $startrow = 0;
+        } else {
+            $startrow = (int)$_GET['startrow'];
+        }
+        $orderQuery = "SELECT * FROM orders WHERE order_email=?";
+        $email = $_SESSION['customer'];
+        $stmt = statement_init();
+        statement_confirm($stmt, $orderQuery);
+
+        //Bind params
+        mysqli_stmt_bind_param($stmt, "s", $email);
+        //Run parameters inside db
+        statement_execute($stmt);
+        $result = statement_result($stmt);
+
+        while($row = fetch_array($result)){
+            $orders = <<<DELIMETER
+                <tr>
+                    <td>{$row['order_payment_id']}</td>
+                    <td>{$row['order_date']}</td>
+                    <td><div class="row">
+                            <div class="col-12 col-lg-12">
+                                <strong>Order Total: R{$row['order_amount_gross']}</strong>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <strong>Payment Status: {$row['order_payment_status']}</strong>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+DELIMETER;
+            echo $orders;
+        }
+    }
+
+    //////////////////////////////////////////////////////////////////Hash functions/////////////////////////////////////////////////////////////////////////////////
 
     function create_hash($password){
         if(!is_string($password)){

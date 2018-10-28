@@ -22,14 +22,19 @@
             while ($row = fetch_array($result)) {
                 if ($row['product_quantity'] != $_SESSION['product_' . $_GET['add']]) {
                     $_SESSION['product_' . $_GET['add']] += 1;
+                    $_SESSION['item_quantity']++;
                     if(isset($_GET['id'])) {
                         redirect("../public/item.php?id=" . $_GET['id']);
                     }
-                    else{
+                    elseif(isset($_GET['page'])){
                         redirect("../public/index.php");
                     }
+                    else{
+                        redirect("../public/checkout.php");
+                    }
                 } else {
-                    set_message(" We only have " . $row['product_quantity'] . " " . $row['product_title'] . "s available");
+                    $row['product_quantity'] == 1 ? set_message("We only have " . $row['product_quantity'] . " " . $row['product_title'] . " available") : set_message("We only have " . $row['product_quantity'] . " " . $row['product_title'] . "'s available");
+                    display_error_message(" We only have " . $row['product_quantity'] . " " . $row['product_title'] . "s available");
                     redirect("../public/checkout.php");
                 }
             }
@@ -39,11 +44,6 @@
         redirect("../public/login_customer.php");
     }
 
-    if (isset($_GET['add_quantity'])) {
-        $_SESSION['product_' . $_GET['add_quantity']]++;
-        redirect("../public/checkout.php");
-    }
-
     if (isset($_GET['remove'])) {
         if ($_SESSION['product_' . $_GET['remove']] < 1) {
             unset($_SESSION['item_total']);
@@ -51,6 +51,7 @@
             redirect("../public/checkout.php");
         } else {
             $_SESSION['product_' . $_GET['remove']]--;
+            $_SESSION['item_quantity']--;
             redirect("../public/checkout.php");
         }
     }
@@ -58,7 +59,7 @@
 
     if (isset($_GET['delete'])) {
 
-        $_SESSION['product_' . $_GET['delete']] = '0';
+        $_SESSION['product_' . $_GET['delete']] = 0;
         unset($_SESSION['item_total']);
         unset($_SESSION['item_quantity']);
         redirect("../public/checkout.php");
@@ -106,34 +107,34 @@ function cart_display()
                     $cart_item = <<<DELIMETER
 
                         <tr>
-                            <td>{$row['product_title']}<br>
+                            <td colspan="3">{$row['product_title']}<br>
                                 <img src="../resources/{$productImage}" style="height: 100px">
                             </td>
-                            <td>R{$row['product_price']}</td>
-                            <td>{$value}</td>
+                            <td colspan="3">R{$row['product_price']}</td>
+                            <td colspan="3">{$value}</td>
                             <!--<td>R{$subTotal}</td>-->
-                            <td>
+                            <td colspan="3">
                             <div class="row mb-1">
-                            <div class="col-12 col-lg-12">
-                                <a class="btn btn-warning btn-sm" href="../resources/cart.php?remove={$row['product_id']}"><i class="fas fa-minus"></i></a>
-                            </div>
-                            </div>
-                            <div class="row mb-1">
-                            <div class="col-12 col-lg-12">
-                                <a class="btn btn-success btn-sm" href="../resources/cart.php?add_quantity={$row['product_id']}"><i class="fas fa-plus"></i></a>
-                            </div>
+                                <div class="col-12 col-lg-12">
+                                    <a class="btn btn-warning btn-sm btn-cart" href="../resources/cart.php?remove={$row['product_id']}"><i class="fas fa-minus"></i></i></a>
+                                </div>
                             </div>
                             <div class="row mb-1">
-                            <div class="col-12 col-lg-12">
-                                <a class="btn btn-danger btn-sm" href="../resources/cart.php?delete={$row['product_id']}"><i class="fas fa-times"></i></a>
+                                <div class="col-12 col-lg-12">
+                                    <a class="btn btn-success btn-sm btn-cart" href="../resources/cart.php?add={$row['product_id']}"><i class="fas fa-plus"></i></i></a>
+                                </div>
                             </div>
+                            <div class="row mb-1">
+                                <div class="col-12 col-lg-12">
+                                    <a class="btn btn-danger btn-sm btn-cart" href="../resources/cart.php?delete={$row['product_id']}"><i class="fas fa-times"></i></a>
+                                </div>
                             </div>
                             </td>
                         </tr>
                         <input type="hidden" name="item_name_{$item_name}" value="{$row['product_title']}">
                         <input type="hidden" name="item_number_{$item_number}" value="{$row['product_id']}">
                         <input type="hidden" name="amount_{$amount}" value="{$row['product_price']}">
-                        <input type="hidden" name="quantity_{$quantity}" value="{$value}">
+                        <input type="hidden" name="quantity_{$quantity}" value="{$item_quantity}">
 DELIMETER;
                     array_push($productIDArr, $row['product_id']);
 
@@ -228,7 +229,7 @@ function process_transaction()
         redirect("index.php");
     }
     if (isset($_GET['delete'])) {
-        $_SESSION['product_' . $_GET['delete']] = '0';
+        $_SESSION['product_' . $_GET['delete']] = 0;
     }
     unset($_SESSION['item_total']);
     unset($_SESSION['item_quantity']);

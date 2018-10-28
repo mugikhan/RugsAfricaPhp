@@ -120,6 +120,7 @@ if ( !$pfError )
             $amountFee = $pfData['amount_fee'];
             $amountNet = $pfData['amount_net'];
             $customerEmail = $pfData['email_address'];
+            $orderDate = date("d/m/Y");
 
             ///use this for when fetching products to display to users what they ordered
             $itemNamesArr = array();
@@ -129,13 +130,13 @@ if ( !$pfError )
 
             /*$query = query("INSERT INTO orders (order_payment_id, order_payment_status, order_item_name, order_amount_gross, order_amount_fee, order_amount_net, order_email) VALUES ($payfastID, $paymentStatus, $itemName, $amountGross, $amountFee, $amountNet, $customerEmail)");
             confirm($query);*/
-            $query = "INSERT INTO orders (order_payment_id, order_payment_status, order_item_name, order_amount_gross, order_amount_fee, order_amount_net, order_email) VALUES (?, ?, ?, ?, ?, ?, ?)";
+            $query = "INSERT INTO orders (order_payment_id, order_payment_status, order_item_name, order_amount_gross, order_amount_fee, order_amount_net, order_email, order_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = statement_init();
 
             statement_confirm($stmt, $query);
 
             //Bind params
-            mysqli_stmt_bind_param($stmt, "issddds", $payfastID, $paymentStatus, $itemNames, $amountGross, $amountFee, $amountNet, $customerEmail);
+            mysqli_stmt_bind_param($stmt, "issdddss", $payfastID, $paymentStatus, $itemNames, $amountGross, $amountFee, $amountNet, $customerEmail, $orderDate);
             //Run parameters inside db
             statement_execute($stmt);
             $result = statement_result($stmt);
